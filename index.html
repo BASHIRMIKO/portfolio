@@ -1,46 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My About Page</title>
-    <style>
-        h1 {
-            font-size: 50px;
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <h1>My About Page</h1>
-    <div>
-        <p>My name is <strong>Bashir Sulaiman Mikail</strong> i am a <strong>Computer Science</strong> Student
-            from North West University,  i have a passion in creating Responsive website
-            and Mobile Applications to solve real life problems.
-        </p>
-    </div>
-        <h2>I have some experience with</h2>
-        <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bashir Sulaiman Mikail | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Bashir Sulaiman Mikail, a Computer Science student focused on responsive websites and mobile applications."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <div class="brand-block">
+          <a href="#home" class="brand">Bashir Sulaiman Mikail</a>
+        </div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Student.</p>
+          <h1>Designing digital experiences that feel modern and useful.</h1>
+          <p class="lead">
+            My name is <strong>Bashir Sulaiman Mikail</strong>, and I am a
+            <strong>Computer Science</strong> student from North West University.
+            I enjoy creating responsive websites and mobile applications that solve
+            real-life problems with clean, practical design.
+          </p>
+
+          <div class="cta-group">
+            <a class="btn btn-primary" href="contact.html">Contact me</a>
+            <a
+              class="btn btn-secondary"
+              href="https://bashirmiko-portfolio.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              >View portfolio</a
+            >
+          </div>
+
+          <ul class="stats" aria-label="Quick facts">
+            <li><strong>4+</strong><span>Core skills</span></li>
+            <li><strong>Web</strong><span>Responsive UI</span></li>
+            <li><strong>Apps</strong><span>Mobile ideas</span></li>
+          </ul>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="avatar">BS</div>
+          <p class="status">Available for projects</p>
+          <h2>Creative developer</h2>
+          <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>Git & Github</li>
-        </ul>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </aside>
+      </section>
 
-        <h3>My hobbies</h3>
+      <section id="about" class="info-panel">
+        <div class="panel-heading">
+          <p class="section-tag">About</p>
+          <h2>Focused on clean code and thoughtful user experiences.</h2>
+        </div>
+        <p>
+          I’m passionate about building interfaces that are not only visually
+          polished but also intuitive, accessible, and useful in everyday life.
+          My work blends creativity with problem-solving, whether I’m designing a
+          responsive website or exploring a new mobile app idea.
+        </p>
+      </section>
 
-        <ul>
-            <li>Qur an recitation</li>
-            <li>Programming</li> 
-            <li>Playing PES</li>
-            <li>Mathematics</li>
-        </ul>
+      <section id="skills" class="skills-section">
+        <div class="section-header">
+          <p class="section-tag">Skills</p>
+          <h2>Tools and technologies I work with</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span>HTML</span>
+            <p>Semantic structure and accessible layouts.</p>
+          </div>
+          <div class="skill-card">
+            <span>CSS</span>
+            <p>Responsive design, modern styling, and UI polish.</p>
+          </div>
+          <div class="skill-card">
+            <span>JavaScript</span>
+            <p>Interactive web experiences and user flows.</p>
+          </div>
+          <div class="skill-card">
+            <span>Git &amp; GitHub</span>
+            <p>Version control and project collaboration.</p>
+          </div>
+        </div>
+      </section>
 
-        <h4>Website i frequently use</h4>
-        <a href="https://atm.moniepoint.com/main-app/aggregator/brm-dashboard-v2/terminal-transactions-list">MONIEPOINT MFB</a>
+      <section id="hobbies" class="hobbies-section">
+        <div class="section-header">
+          <p class="section-tag">Hobbies</p>
+          <h2>Things I enjoy beyond coding</h2>
+        </div>
+        <div class="hobby-list">
+          <div class="hobby-item">Qur'an recitation</div>
+          <div class="hobby-item">Programming</div>
+          <div class="hobby-item">Playing PES</div>
+          <div class="hobby-item">Mathematics</div>
+        </div>
+      </section>
+    </main>
 
-        <p>To learn more About me here is a link to my portfolio website. <a href="https://bashirmiko-portfolio.netlify.app/">My portfolio</a></p>
-
-        <p><a href="contact.html">Contact me</a></p>
-</body>
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="section-tag footer-tag">Contact</p>
+          <h3>Let’s build something useful together.</h3>
+        </div>
+        <div class="footer-links">
+          <a href="contact.html">Contact me</a>
+          <a
+            href="https://atm.moniepoint.com/main-app/aggregator/brm-dashboard-v2/terminal-transactions-list"
+            target="_blank"
+            rel="noreferrer"
+            >MONIEPOINT MFB</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
